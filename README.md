@@ -28,7 +28,7 @@
 <div align="center"> <img src="./imgs/ipc.jpg"/> </div><br>
 
 ### 1. 管道
-用于连接一个读进程和一个写进程以实现以实现它们之间通信的一个共享文件，又名pipe文件。
+用于连接一个读进程和一个写进程以实现以它们之间通信的一个共享文件，又名pipe文件。
 
 特点：
 * 它们是半双工的（即数据只能在一个方向上流动）
@@ -37,7 +37,6 @@
 函数：
 ~~~c
 # include <unistd.h>
-
 int pipe(int fileds[2]);
 ~~~
 
@@ -71,6 +70,21 @@ exit(0);
 
 <div align="center"> <img src="./imgs/pipe1.jpg"/> </div><br>
 <div align="center"> <img src="./imgs/pipe2.jpg"/> </div><br>
+
+### 2. FIFO
+FIFO是一种文件类型，也称为命名管道，一般的文件I/O函数都可应用于FIFO。
+
+特点：
+去除了管道只能在父子进程中使用的限制，不相关的进程也能交换数据。
+
+函数：
+~~~c
+#include <sys/stat.h>
+int mkfifo(const char *path, mode_t mode);
+~~~
+
+<div align="center"> <img src="./imgs/FIFO.jpg"/> </div><br>
+
 
 
 参考：
