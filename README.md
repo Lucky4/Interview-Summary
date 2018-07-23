@@ -69,6 +69,8 @@ exit(0);
 ~~~
 管道是通过调用 pipe 函数创建的，fd[0] 用于读，fd[1] 用于写。
 
+<div align="center"> <img src="./imgs/pipe1.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/pipe2.jpg"/> </div><br>
 
 
 参考：
