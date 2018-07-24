@@ -83,12 +83,4 @@ FIFO是一种文件类型，也称为命名管道，一般的文件I/O函数都�
 int mkfifo(const char *path, mode_t mode);
 ~~~
 
-<div align="center"> <img src="./imgs/FIFO.jpg"/> </div><br>
-
-
-
-参考：
-
-https://github.com/CyC2018/Interview-Notebook/edit/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md
-《计算机操作系统》
-《深入理解计算机系统》
+<div align="center"> <img src="./imgs/fifo.jpg"/> </div><br>
