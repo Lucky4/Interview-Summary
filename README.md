@@ -85,8 +85,10 @@ int mkfifo(const char *path, mode_t mode);
 
 <div align="center"> <img src="./imgs/fifo.jpg"/> </div><br>
 
-### 3. socket
+### 3. 套接字
 套接字网络IPC接口，可以用于计算机间通信，又可以用于计算机内通信，进程能够使用该接口和其他进程通信。
+
+RPC是使用套接字实现的一种高级进程通信方式。
 
 基于字符流的进程通信规约
 <div align="center"> <img src="./imgs/char.jpg"/> </div><br>
@@ -99,6 +101,7 @@ int mkfifo(const char *path, mode_t mode);
 
 ### 5. 共享存储
 允许多个进程共享一个给定的存储区。因为数据不需要在进程之间复制，所以这是最快的一种 IPC。
+<div align="center"> <img src="./imgs/share_memory.jpg"/> </div><br>
 
 需要使用信号量用来同步对共享存储的访问。
 
