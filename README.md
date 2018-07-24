@@ -27,7 +27,47 @@
 ## 进程之间的通信
 <div align="center"> <img src="./imgs/ipc.jpg"/> </div><br>
 
+### 1. 管道
+用于连接一个读进程和一个写进程以实现以实现它们之间通信的一个共享文件，又名pipe文件。
 
+特点：
+* 它们是半双工的（即数据只能在一个方向上流动）
+* 一般在父子进程中使用，一个管道由一个进程创建，接着调用fork，此后父子进程间就可应用管道通信。
+
+函数：
+~~~c
+# include <unistd.h>
+
+int pipe(int fileds[2]);
+~~~
+
+例子：
+~~~c
+int
+main(void)
+{
+    int n;
+    int fd[2];
+    pid_t pid;
+    char line[MAXLINE];
+
+    if (pipe[fd] < 0)
+        err_sys("pipe error");
+    if ((pid = fork()) < 0) {
+        err_sys("fork error");
+    } else if (pid > 0) {
+        close(fd[0]);
+        write(fd[1], "hello world\n", 12);
+    } else {
+        close(fd[1]);
+        n = read(fd[0], line, MAXLINE);
+        write(STDOUT_FILENO, line, n);
+    }
+
+exit(0);
+}
+~~~
+管道是通过调用 pipe 函数创建的，fd[0] 用于读，fd[1] 用于写。
 
 
 
