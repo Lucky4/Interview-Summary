@@ -4,7 +4,7 @@
 <!-- GFM-TOC -->
 * [进程与线程的区别](#进程与线程的区别)
 * [进程之间的通信](#进程之间的通信)
-* [进程控制(fork(),wait(),waitpid(),sleep(),execve())](#进程控制(fork(),wait(),waitpid(),sleep(),execve())
+* [进程控制(fork(),waitpid(),sleep(),execve())](#进程控制(fork(),waitpid(),sleep(),execve()))
 <!-- GFM-TOC -->
 
 ## 进程与线程的区别
