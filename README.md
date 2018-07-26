@@ -5,6 +5,9 @@
 * [进程与线程的区别](#进程与线程的区别)
 * [进程之间的通信](#进程之间的通信)
 * [进程控制(fork(),wait(),waitpid(),sleep(),execve())](#进程控制(fork(),wait(),waitpid(),sleep(),execve())
+* [进程调度算法](#进程调度算法)
+* [页面置换算法](#页面置换算法)
+
 <!-- GFM-TOC -->
 
 ## 进程与线程的区别
@@ -216,3 +219,31 @@ int execve(char *filename, char *argv[], char *envp[]);
 execve函数加载并运行可执行目标文件filename，且带参数列表argv和环境列表envp。除非出现错误，否则该函数从不返回。
 
 Unix shell和web服务器这样的程序大量使用了fork和execve函数。shell是一个交互型的应用程序，它代表用户运行其他程序。
+
+## 进程调度算法
+https://github.com/CyC2018/Interview-Notebook/blob/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95
+
+## 页面置换算法
+先介绍一些页式存储管理相关的概念。
+
+页式存储管理采用离散分配的方式，离散分配的基本单位是页，称为分页式存储管理。
+
+### 页面
+一个进程的逻辑地址空间分成若干个大小相等的片，称为页面或页。
+把内存空间分成与页面相同大小的若干个存储块，称为块或页架。
+最后一页经常装不满，会产生页内碎片。
+页面太小，减少业内碎片，提高内存利用率，降低页面换进换出效率，占用大量内存；页面太大，提高页面换进换出速度，但业内碎片增大。
+
+### 地址结构
+<div align="center"> <img src="./imgs/page_struct.jpg"/> </div><br>
+地址转换的例子：https://blog.csdn.net/douyuan888/article/details/9215053
+
+### 页表
+页号和物理块号对应的表，存放在主存/内存中，进行地址转换的时候CPU需要访问两次主存/内存。快表可以提高页面的访问速度。
+
+### 页式虚拟存储管理的基本思想
+把进程全部页面装入虚拟存储器，执行时先把部分页面装入实际内存，然后根据执行行为，动态调入不在主存的页，同时进行必要的页面调出。
+首次只把进程的第一页信息装入主存，称为请求式存储管理。
+
+### 页面置换算法
+https://github.com/CyC2018/Interview-Notebook/blob/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md#%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95
