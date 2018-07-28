@@ -50,6 +50,7 @@ wakeup (contition varaible)
 ~~~
 
 3. 信号量机制
+
 * 私有信号量
 * 共有信号量
 
