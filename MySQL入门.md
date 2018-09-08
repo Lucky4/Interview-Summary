@@ -86,3 +86,10 @@ ORDER BY prod_price DESC, prod_name ASC;
 
 ## 过滤数据
 
+可以使用WHERE子句对搜索的数据进行SQL过滤。数据也可以在应用层上过滤，但是这样服务器不得不通过网络发送多余的数据，这将导致网络带宽的浪费。
+
+~~~sql
+SELECT prod_name
+FROM products
+WHERE prod_price = 2;
+~~~
