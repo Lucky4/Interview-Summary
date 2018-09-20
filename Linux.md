@@ -110,7 +110,6 @@ $ ps -aux --sort -pcpu | less
 $ ps -aux --sort -pmem | less
 ~~~
 
-
 #### kill
 
 kill命令用于删除执行中的程序或工作。
