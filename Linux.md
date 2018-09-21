@@ -59,7 +59,7 @@ $ ftw(3)
 ~~~
 
 构成循环符号链接：
-<div align="center"> <img src="./imgs/linux/symlink.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/inux/symlink.jpg"/> </div><br>
 
 使用ftw(3)遍历文件结构，输出是：
 ~~~shell
