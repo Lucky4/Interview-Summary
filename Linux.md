@@ -243,7 +243,7 @@ $ find . -type f -perm 644 -exec ls -l {} \;
 ~~~
 
 
-参考：https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2
+[参考](https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2)
 
 #### grep
 
@@ -264,7 +264,7 @@ $ grep -r update /etc/acpi
 $ grep -v test *.file
 ~~~
 
-参考：https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#grep
+[参考](https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#grep)
 
 #### top
 
@@ -284,6 +284,10 @@ $ top -n 10
 ~~~shell
 top -n 2 -b > top.log
 ~~~
+
+使用top命令查看CPU使用情况：
+[参考1](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
+[参考２](https://blog.csdn.net/daiyudong2020/article/details/52760846)
 
 #### df/du
 
