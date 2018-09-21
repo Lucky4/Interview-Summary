@@ -7,12 +7,12 @@
 我们可以把一个磁盘分成一个或多个分区，每个分区可以包含一个文件系统。
 
 磁盘、分区和文件系统结构图：
-<div align="center"> <img src="./imgs/linux/file_system1.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/Linux/file_system1.jpg"/> </div><br>
 
 #### 硬链接
 
 硬链接示意图：
-<div align="center"> <img src="./imgs/linux/link.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/Linux/link.jpg"/> </div><br>
 
 * 图中有两个目录指向同一个i节点，每个i节点都有一个连接计数，其值是指向该i节点的目录项数。只有当链接计数为0时，才可删除该文件（释放数据块）。这种链接被称为“硬链接”。
 * i节点包含了大多数与文件有关的信息：文件类型、文件访问权限位、文件长度等。
