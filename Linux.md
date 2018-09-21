@@ -286,7 +286,9 @@ top -n 2 -b > top.log
 ~~~
 
 使用top命令查看CPU使用情况：
+
 [参考1](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
+
 [参考２](https://blog.csdn.net/daiyudong2020/article/details/52760846)
 
 #### df/du
