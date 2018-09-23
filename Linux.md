@@ -7,12 +7,12 @@
 我们可以把一个磁盘分成一个或多个分区，每个分区可以包含一个文件系统。
 
 磁盘、分区和文件系统结构图：
-<div align="center"> <img src="./imgs/linux/file_system1.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/Linux/file_system1.jpg"/> </div><br>
 
 #### 硬链接
 
 硬链接示意图：
-<div align="center"> <img src="./imgs/linux/link.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/Linux/link.jpg"/> </div><br>
 
 * 图中有两个目录指向同一个i节点，每个i节点都有一个连接计数，其值是指向该i节点的目录项数。只有当链接计数为0时，才可删除该文件（释放数据块）。这种链接被称为“硬链接”。
 * i节点包含了大多数与文件有关的信息：文件类型、文件访问权限位、文件长度等。
@@ -59,7 +59,7 @@ $ ftw(3)
 ~~~
 
 构成循环符号链接：
-<div align="center"> <img src="./imgs/linux/symlink.jpg"/> </div><br>
+<div align="center"> <img src="./imgs/Linux/symlink.jpg"/> </div><br>
 
 使用ftw(3)遍历文件结构，输出是：
 ~~~shell
@@ -243,7 +243,7 @@ $ find . -type f -perm 644 -exec ls -l {} \;
 ~~~
 
 
-参考：https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2
+[参考](https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%96%87%E4%BB%B6%E6%90%9C%E7%B4%A2)
 
 #### grep
 
@@ -264,7 +264,7 @@ $ grep -r update /etc/acpi
 $ grep -v test *.file
 ~~~
 
-参考：https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#grep
+[参考](https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md#grep)
 
 #### top
 
@@ -284,6 +284,12 @@ $ top -n 10
 ~~~shell
 top -n 2 -b > top.log
 ~~~
+
+使用top命令查看CPU使用情况：
+
+[参考1](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
+
+[参考２](https://blog.csdn.net/daiyudong2020/article/details/52760846)
 
 #### df/du
 

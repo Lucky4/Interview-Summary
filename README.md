@@ -6,3 +6,9 @@
 
 ## MySQL入门
 > [MySQL入门](https://github.com/Lucky4/Interview-Summary/blob/master/MySQL入门.md)
+
+## Linux
+> [Linux](https://github.com/Lucky4/Interview-Summary/blob/master/Linux.md)
+
+## 实际应用场景问题
+> [实际应用场景问题](https://github.com/Lucky4/Interview-Summary/blob/master/实际应用场景问题.md)
