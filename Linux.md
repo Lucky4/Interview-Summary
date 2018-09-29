@@ -100,15 +100,17 @@ $ ps -ef   与上面的命令结果一样
 $ ps aux | grep processX
 ~~~
 
-根据 CPU 使用来升序排序:
+根据 CPU 使用来降序排序:
 ~~~shell
 $ ps -aux --sort -pcpu | less
 ~~~
 
-根据内存使用来升序排序
+根据内存使用来降序排序
 ~~~shell
 $ ps -aux --sort -pmem | less
 ~~~
+
+升序用+号
 
 #### kill
 
