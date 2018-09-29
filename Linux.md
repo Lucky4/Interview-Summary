@@ -175,7 +175,7 @@ $ cat /dev/null > /etc/test.txt
 
 #### more/less
 
-more可以以一页一页的方式显示内容,less比more更有弹性,可以回退之前显示的内容.
+more可以以一页一页的方式显示内容,less比more更有弹性,可以回退之前显示的内容即more查看到文件末尾后就结束就不能在查看之前内容了.
 
 从第 20 行开始显示 testfile 之文档内容。
 ~~~shell
