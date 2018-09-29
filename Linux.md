@@ -151,7 +151,7 @@ $ chown users:runoob file1.txt
 
 将目前目录下的所有文件与子目录的拥有者皆设为 users 群体的使用者 lamport :
 ~~~shell
-$ chown -R lamport:users *
+$ chown -R users:lamport *
 ~~~
 
 #### cat/tac
