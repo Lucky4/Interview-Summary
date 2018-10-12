@@ -1,5 +1,6 @@
 * [硬链接和软连接的区别](#硬链接和软连接的区别)
 * [Linux 用过的命令](#linux-用过的命令)
+* [Linux 查看负载](#linux-查看负载)
 
 
 ## 硬链接和软连接的区别
@@ -405,3 +406,10 @@ ls -lR | grep ^d | wc -l
 用于查看内存使用情况．
 
 #### awk
+
+
+## Linux 查看负载
+
+* 使用top命令。
+* 使用uptime命令。
+* 其他，如w,vmstat,sar,free,ps,netstat,tcpdump命令。
