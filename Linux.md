@@ -412,4 +412,16 @@ ls -lR | grep ^d | wc -l
 
 * 使用top命令。
 * 使用uptime命令。
-* 其他，如w,vmstat,sar,free,ps,netstat,tcpdump命令。
+
+    显示的负载信息
+    ~~~shell
+    04:03:58 up 10 days, 13:19, 1 user, load average: 0.54, 0.40, 0.20
+    ~~~
+    1. 当前时间 04:03:58。
+    2. 系统已运行的时间 10 days, 13:19。
+    3. 当前在线用户 1 user。
+    4. 平均负载：0.54, 0.40, 0.20，最近1分钟、5分钟、15分钟系统的负载，值越低越好。
+
+* sar查看历史负载。
+
+    [参考](http://blog.chinaunix.net/uid-20773865-id-2241402.html)
