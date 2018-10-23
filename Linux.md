@@ -300,6 +300,8 @@ top -n 2 -b > top.log
 
 [参考３](https://blog.csdn.net/hxpjava1/article/details/79679952)
 
+[参考４](https://www.cnblogs.com/bugutian/p/6138880.html)
+
 #### df/du
 
 df命令用于显示目前在Linux系统上的文件系统的磁盘使用情况统计。
