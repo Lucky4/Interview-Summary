@@ -419,9 +419,7 @@ ls -lR | grep ^d | wc -l
 ## Linux 查看负载
 
 * 使用top命令。
-* 使用uptime命令。
-
-    显示的负载信息
+* 使用uptime命令,显示的负载信息．
     ~~~shell
     04:03:58 up 10 days, 13:19, 1 user, load average: 0.54, 0.40, 0.20
     ~~~
