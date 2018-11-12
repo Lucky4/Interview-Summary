@@ -368,7 +368,7 @@ $ netstat -ap | grep ssh
 
 找出运行在指定端口的进程：
 ~~~shell
-$ netstat -tunlp | grep 80
+$ netstat -anp | grep 80
 ~~~
 
 #### wc
