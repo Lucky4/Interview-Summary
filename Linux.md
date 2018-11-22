@@ -290,10 +290,15 @@ top -n 2 -b > top.log
 
 使用top命令查看CPU使用情况：
 
-[参考1](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
+* 输入大写Ｍ，按内存使用率降序显示．
+* 输入大写Ｐ，按CPU使用率降序显示．
+* 输入１，显示多核（逻辑CPU）使用率．
+
+[参考 1](https://coderxing.gitbooks.io/architecture-evolution/di-er-pian-ff1a-feng-kuang-yuan-shi-ren/44-an-quan-yu-yun-wei/445-fu-wu-qi-zhuang-tai-jian-ce/4451-ming-ling-xing-gong-ju.html)
 
 [参考２](https://blog.csdn.net/daiyudong2020/article/details/52760846)
 
+<<<<<<< HEAD
 使用 top 命令查看线程：
 ~~~shell
 top -H -p <pid>
@@ -307,6 +312,14 @@ ps -T -p <pid>
 ~~~
 
 [参考](https://www.cnblogs.com/EasonJim/p/8098217.html)
+=======
+[参考３](https://blog.csdn.net/hxpjava1/article/details/79679952)
+
+[参考４](https://www.cnblogs.com/bugutian/p/6138880.html)
+
+#### lsof
+[参考](https://www.ibm.com/developerworks/cn/aix/library/au-lsof.html?mhq=lsof&mhsrc=ibmsearch_a)
+>>>>>>> origin
 
 #### df/du
 
@@ -371,7 +384,7 @@ $ netstat -ap | grep ssh
 
 找出运行在指定端口的进程：
 ~~~shell
-$ netstat -tunlp | grep 80
+$ netstat -anp | grep 80
 ~~~
 
 #### wc
@@ -425,9 +438,7 @@ ls -lR | grep ^d | wc -l
 ## Linux 查看负载
 
 * 使用top命令。
-* 使用uptime命令。
-
-    显示的负载信息
+* 使用uptime命令,显示的负载信息．
     ~~~shell
     04:03:58 up 10 days, 13:19, 1 user, load average: 0.54, 0.40, 0.20
     ~~~
