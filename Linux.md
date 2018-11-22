@@ -294,6 +294,20 @@ top -n 2 -b > top.log
 
 [参考２](https://blog.csdn.net/daiyudong2020/article/details/52760846)
 
+使用 top 命令查看线程：
+~~~shell
+top -H -p <pid>
+~~~
+
+或者在使用 top 命令后按大写 H 切换线程开关。
+
+也可使用 ps 指令查看线程：
+~~~shell
+ps -T -p <pid>
+~~~
+
+[参考](https://www.cnblogs.com/EasonJim/p/8098217.html)
+
 #### df/du
 
 df命令用于显示目前在Linux系统上的文件系统的磁盘使用情况统计。
